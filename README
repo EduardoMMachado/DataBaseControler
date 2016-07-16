@@ -1,0 +1,31 @@
+Implementação de banco de dados usando active_record em Ruby.
+
+Eduardo Machado
+GRR20142062
+
+  O programa initDataBase.rb inicializa o banco de dados com todas as tabelas
+que serão usadas posteriormente, já o runDataBase.rb tem como objetivo a
+manipulação deste banco de dados.
+  Os comandos lidos pelo runDataBase.rb são:
+  - insert (Usado para inserir um novo elemento em uma das tabelas).
+  - change (Modifica um elemento já inserido na tabela).
+  - remove (remove um elemento de uma tabela).
+  - list (Lista todos os elementos de uma tabela).
+    exemplos de list's possíveis:
+    - list people
+    - list addresses
+    - list emails
+    - list professions
+    - list addresses_people (tabela que faz o link de pessoas com endereços)
+    - list all (lista todas as tabelas)
+  - exit (Sai do programa).
+
+A lista de comandos para teste estão no arquivo teste.txt e apenas não possuem
+comandos de listagem que podem ser escritos por quem estiver testando em qualquer
+etapa do processo.
+
+Execução:
+  Primeiramente é necessário inicializar o banco de dados, para isso use o comando:
+    ruby initDataBase.rb
+  Depois disso basta rodar o programa runDataBase.rb com o comando
+    ruby runDataBase.rb
